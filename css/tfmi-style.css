@@ -1,0 +1,69 @@
+@charset "big5";
+/* CSS Document */
+
+.serviceBox{
+    color: #606060;
+    background-color: #fff;
+    text-align: center;
+    padding:0 10px 20px;
+    margin: 25px 0 0;
+    border: 1px solid transparent;
+    border-bottom: 10px solid #8fcc0c;
+    border-radius: 30px;
+}
+.serviceBox .service-icon{
+    color: #fff;
+    background: #8fcc0c;
+    font-size: 35px;
+    padding: 5px 40px;
+    margin: -30px 0 0 0;
+    box-shadow: 0 -10px 10px -5px rgba(0,0,0,0.2) inset;
+    border-radius: 15px 15px 0 0;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.serviceBox .service-icon i{
+    transform: rotate(0deg);
+    transition: all 0.3s ease 0s;
+}
+.serviceBox:hover .service-icon i{
+    text-shadow: 0 0 5px #555;
+    transform: rotate(360deg);
+}
+.serviceBox .service-content{
+    background-color: #fff;
+    padding: 30px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 3px rgba(0,0,0,0.2);
+}
+.serviceBox .title{
+    color: #8fcc0c;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+.serviceBox .title small{
+    color: #8fcc0c;
+}
+.serviceBox .description{
+    font-size: 15px;
+    text-align: left;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.serviceBox.orange{ border-bottom-color: #FF8B04; }
+.serviceBox.orange .service-icon{ background-color: #FF8B04; }
+.serviceBox.orange .title,.serviceBox.orange .title small{ color: #FF8B04; }
+.serviceBox.red{ border-bottom-color: #ea1337; }
+.serviceBox.red .service-icon{ background-color: #ea1337; }
+.serviceBox.red .title,.serviceBox.red .title small{ color: #ea1337; }
+.serviceBox.blue{ border-bottom-color: #01AFD2; }
+.serviceBox.blue .service-icon{ background-color: #01AFD2; }
+.serviceBox.blue .title,.serviceBox.blue .title small{ color: #01AFD2; }
+.serviceBox.darkblue{ border-bottom-color: #4363B0; }
+.serviceBox.darkblue .service-icon{ background-color: #4363B0; }
+.serviceBox.darkblue .title,.serviceBox.darkblue .title small{ color: #4363B0; }
+@media only screen and (max-width:990px){
+    .serviceBox{ margin: 25px 0 50px; }
+}
